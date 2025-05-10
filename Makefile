@@ -5,14 +5,14 @@ setup:
 
 #@make composer-update
 build:
-	docker-compose build --no-cache --force-rm
+	docker compose build --no-cache --force-rm
 stop:
-	docker-compose stop
+	docker compose stop
 up:
-	docker-compose up -d
+	docker compose up -d
 
 start:
-	docker-compose up -d
+	docker compose up -d
 	npm run dev
 install_vue:
 	npm install
